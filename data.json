@@ -1,17 +1,1 @@
-[{
-    "settings": {
-        "authorName"  : "",
-        "authorImg"   : "",
-        "authorBio"   : "",
-        "disqusUrl"   : "",
-        "disqusName"  : "",
-        "authorSocial": {
-            "github"  : "http://github.com",
-            "twitter" : "http://twitter.com",
-            "facebook": "http://facebook.com",
-            "linkedin": "http://linkedin.com",
-            "envelope": "mailto:email@provider.com"
-        }
-    },
-    "archive": []
-}]
+[{"settings": {"authorName":"Endz","authorImg":"https://avatars.githubusercontent.com/u/4704694?v=2","authorBio":"Write. Rewrite. Bang head against wall.  Edit. Re-edit.","disqusUrl":"","disqusName":"","authorSocial":{"github":"http://github.com","twitter":"http://twitter.com","facebook":"http://facebook.com","linkedin":"http://linkedin.com","envelope":"mailto:email@provider.com"}},"archive":[{"title":"Example post 1","description":"Example description","date":"2014-09-14T16:33:48.505Z","tags":["Tag1","Tag2","Tag3"],"postData":"#Example post 1\n####Example description\n#####Tag1,Tag2,Tag3\n\n##Getting started\nPress `Ctrl+e` or `Cmd+e` and start typing!  \nPress `Ctrl+s` or `Cmd+s` to save  \nPress `Ctrl+m` or `Cmd+m` to create a new post  \nPress `Backspace` to go back to archive  \n\nPress `?` to view shortcuts/hotkeys"},{"title":"Example post 2","description":"Example description","date":"2014-09-14T16:33:51.328Z","tags":["Tag1","Tag2","Tag3"],"postData":"#Example post 2\n####Example description\n#####Tag1,Tag2,Tag3\n\n##Getting started\nPress `Ctrl+e` or `Cmd+e` and start typing!  \nPress `Ctrl+s` or `Cmd+s` to save  \nPress `Ctrl+m` or `Cmd+m` to create a new post  \nPress `Backspace` to go back to archive  \n\nPress `?` to view shortcuts/hotkeys"},{"title":"Example post 3","description":"Example description","date":"2014-09-14T16:33:52.607Z","tags":["Tag1","Tag2","Tag3"],"postData":"#Example post 3\n####Example description\n#####Tag1,Tag2,Tag3\n\n##Getting started\nPress `Ctrl+e` or `Cmd+e` and start typing!  \nPress `Ctrl+s` or `Cmd+s` to save  \nPress `Ctrl+m` or `Cmd+m` to create a new post  \nPress `Backspace` to go back to archive  \n\nPress `?` to view shortcuts/hotkeys"},{"title":"Example post 4","description":"Example description","date":"2014-09-14T16:33:53.270Z","tags":["Tag1","Tag2","Tag3"],"postData":"#Example post 4\n####Example description\n#####Tag1,Tag2,Tag3\n\n##Getting started\nPress `Ctrl+e` or `Cmd+e` and start typing!  \nPress `Ctrl+s` or `Cmd+s` to save  \nPress `Ctrl+m` or `Cmd+m` to create a new post  \nPress `Backspace` to go back to archive  \n\nPress `?` to view shortcuts/hotkeys"}]}]
