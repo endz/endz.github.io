@@ -168,7 +168,7 @@ app.controller('mainController',
     ******************************************/
 
     // get username from window.location
-    $scope.username = $window.location.hostname.contains('github') ? $window.location.hostname.split('.')[0]: 'endz';
+    $scope.username = $window.location.hostname.indexOf('github')!=-1 ? $window.location.hostname.split('.')[0]: 'endz';
     // get blog settings & posts
     GitHub.getData($scope.username).then(function(data){
             $scope.archive = data[0].archive;
