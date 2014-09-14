@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <!--base href="/index.html"-->
+    <title>Blog(G)it</title>
+    <!-- Angular, Font-Awesome, Bootstrap theme -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://bootswatch.com/yeti/bootstrap.min.css" />
+    <!-- Angularjs-toaster (jirikavi) -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.4/toaster.css" />
+    <!-- Codemirror Editor -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.4.0/codemirror.css" />
+    <!-- Prism.js (for blog post syntax highlighting) -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css" />
+    <!-- Angular-hotkeys (chieffancypants) -->
+    <link rel="stylesheet" href="css/hotkeys.css" />
+    <!-- Angular-LoadingBar (chieffancypants) -->
+    <link rel="stylesheet" href="css/loading-bar.css" />
+
+    <link rel="stylesheet" href="css/app.css" />
+    <script>  if (window.location.protocol != "https:") { window.location.protocol = "https:" }   </script>
+</head>
+
+
+<body ng-controller="mainController">
+    <toaster-container></toaster-container>
+
+    <div class="leftPanel" ng-class="{editModeRight:edit}">
+        <div ui-view='profileView'></div>
+        <div ui-view='markupEdit'></div>
+    </div>
+    <div class="rightPanel" ng-class="{editModeRight:edit}" tabindex="-1">
+        <div ui-view='htmlView'></div>
+    </div>
+
+
+    <!-- Angular.js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-cookies.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+    <!-- Angular Local Storage (agrublev) -->
+    <!-- <script src="js/angularLocalStorage.js"></script> -->
+    <!-- Angular-hotkeys (chieffancypants) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
+    <script src="js/hotkeys.js"></script>
+    <!-- Angular-LoadingBar (chieffancypants) -->
+    <script src="js/loading-bar.js"></script>
+    <!-- Marked.js (chjj) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <!-- Angularjs-toaster (jirikavi) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.4/toaster.js"></script>
+    <!-- Prism.js (for blog post syntax highlighting) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+    <!-- Codemirror Editor (IDE & language files) -->
+    <script src="js/ui-codemirror.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.4.0/codemirror.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.4.0/mode/xml/xml.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.4.0/mode/markdown/markdown.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/filters.js"></script>
+
+    <!-- Disqus comments (michaelbromley) -->
+    <script src="js/dirDisqus.js"></script>
+</body>
+
+</html>

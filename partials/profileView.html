@@ -1,0 +1,16 @@
+<div  class="profileView" ng-hide="edit" >
+  <div class="col-md-12 profile">
+    <div class="media" >
+        <div class="profileImage">
+            <img ng-src="{{settings.authorImg}}" class="media-object"> <!-- {{blogGit.settings.authorImg}} -->
+        </div>
+        <div class="media-body">
+            <h1 class="blogOwner" >{{settings.authorName}}</h1>
+            <p>
+                <a ng-repeat="(icon,social) in settings.authorSocial" ng-hide="!social.length" class="btn btn-xs btn-default social" href="{{social}}"><i class="fa fa-{{icon}} fa-2x {{$index}}"></i></a>
+            </p>
+            <p class="blogBio">{{settings.authorBio}}</p>
+        </div>
+    </div>
+  </div>
+</div>

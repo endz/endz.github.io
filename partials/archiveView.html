@@ -1,0 +1,28 @@
+<div  class="htmlView" >
+  <div class="row">
+    <div class="col-lg-12 page-title">
+        <h1>Archives</h1>   
+        
+    </div>
+  </div>
+  <div class=" blog-post-list">
+    <div class="blog-post" 
+        ng-click="selectPost(post.title)"
+        ng-class="{blogPostSelected:$index==position}"
+        ng-repeat="post in (filteredArchive = (archive | orderBy:'date':true | postFilter:start:numPosts ) )  track by post.title">
+        <h2>{{ post.title}}</h2>
+        <div class="postDateTime"><!--span class="fa fa-clock-o"></span--> {{post.date|date:'longDate'}}</div>
+        <div>
+            <a ui-sref="blog.post({title:post.title})"><i class="fa fa-chevron-right fa-3x pull-right chevron"></i></a>
+        </div>
+        <div class="blog-post-description">
+            <p>{{post.description}}</p>
+        </div>
+        <div class="tags">
+            <span class="label label-default" ng-repeat="tag in post.tags" style="margin-right: 5px;"> 
+                <b> {{ tag }} </b> 
+            </span> 
+        </div>
+    </div> 
+    <div ng-hide="filteredArchive.length"><br/><h2>Create a new post by pressing <b>ctrl+m</b> or <b>cmd+m</b></h2></div>
+</div>

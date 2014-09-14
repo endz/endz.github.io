@@ -1,0 +1,10 @@
+<div  class="htmlView">   
+    <div dynamic="html" scroll="{{scrollFactor}}" ></div>
+	<div class="disqusComments" ng-show="{{disqusActive}}" ng-controller="disqusController">
+		<dir-disqus disqus-shortname="{{disqusShortname}}"
+		    disqus-identifier="{{disqusId}}"
+		    disqus-url="{{disqusUrl}}"
+		    ready-to-bind="{{ contentLoaded }}">
+		</dir-disqus>
+	</div>
+</div>
